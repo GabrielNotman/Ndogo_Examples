@@ -70,7 +70,7 @@ void syncRTCwithServer()
         Serial.println(" new=" + String(newTs));
 
         //Update the rtc
-        rtc.setEpoch(newTs);
+        //rtc.setEpoch(newTs);
       }
     }
   }
