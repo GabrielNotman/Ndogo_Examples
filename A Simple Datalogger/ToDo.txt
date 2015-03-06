@@ -1,3 +1,2 @@
 Remove Ndogo SS 12=HIGH code (after rev1).
-Remove Ndogo Sim800H constants and replace with hardware file define ones.
 Modify time retrieval to use the Sim800 clock.

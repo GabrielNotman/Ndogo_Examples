@@ -20,11 +20,6 @@
 //Data header
 #define DATA_HEADER "TimeDate, TempSHT21, TempBMP, PressureBMP, HumiditySHT21"
 
-//Ndogo Sim800 constants, probably be moved to hardware file
-#define NDOGO_PWRKEY_PIN 18
-#define NDOGO_VBAT_PIN 23
-#define NDOGO_STATUS_PIN 19
-
 //Network constants
 #define APN "internet"
 #define APN_USERNAME ""
@@ -141,7 +136,7 @@ void setupComms()
   
   //Intialise the GPRSbee
   #ifdef ARDUINO_AVR_SODAQ_NDOGO
-    gprsbee.initNdogoSIM800(Serial1, NDOGO_PWRKEY_PIN, NDOGO_VBAT_PIN, NDOGO_STATUS_PIN);
+    gprsbee.initNdogoSIM800(Serial1, SIM800PWRKEY, SIM800VBAT, SIM800STATUS);
   #endif
   #ifdef ARDUINO_AVR_SODAQ_MBILI 
     gprsbee.init(Serial1, BEECTS, BEEDTR);
