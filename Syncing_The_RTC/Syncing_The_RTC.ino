@@ -6,7 +6,7 @@
 #define NDOGO_VBAT_PIN 23
 #define NDOGO_STATUS_PIN 19
 
-#define APN "Everywhere"
+#define APN "internet"
 #define APN_USERNAME ""
 #define APN_PASSWORD ""
 
@@ -26,7 +26,7 @@ void setup()
   gprsbee.initNdogoSIM800(Serial1, NDOGO_PWRKEY_PIN, NDOGO_VBAT_PIN, NDOGO_STATUS_PIN);
   
   //Uncomment the line below to debug the GPRSbee with the serial monitor
-  gprsbee.setDiag(Serial);
+  //gprsbee.setDiag(Serial);
   
   //Sync time
   syncRTCwithServer();
