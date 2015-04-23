@@ -1,4 +1,4 @@
-#define LED_PIN 5 //Use digital pin 5 for the LED
+#define LED_PIN 4 //Use digital pin 4 for the LED
 #define SENSOR_PIN A2 //Use analog pin A2 for the sensor
 #define THRESHOLD_VALUE 50 //Activation threshold
  

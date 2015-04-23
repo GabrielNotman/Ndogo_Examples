@@ -1,5 +1,5 @@
-#define LED_PIN 5 //Use digital pin 5 for the LED
-#define PING_PIN 7 //Use digital pin 7 for the range finder
+#define LED_PIN 4 //Use digital pin 4 for the LED
+#define PING_PIN 6 //Use digital pin 6 for the range finder
 #define LED_LIGHT_DISTANCE 5 //At this distance (in cm) or less the LED is lit up
 #define READ_DELAY 100 //Delay between readings in milliseconds
 
@@ -27,12 +27,12 @@ void loop()
   long duration = pulseIn(PING_PIN, HIGH);
 
   //Convert the time into a distance
-  long cm = microsecondsToCentimeters(duration);
+  float cm = microsecondsToCentimeters(duration);
   
   //Output the distance to the serial monitor
   Serial.println("Distance in cm: " + String(cm));
   
-   if (cm < LED_LIGHT_DISTANCE)
+  if (cm < LED_LIGHT_DISTANCE)
   {
     //If the distance reading is equal to or less than 
     //LED_LIGHT_DISTANCE switch the LED on
@@ -48,9 +48,9 @@ void loop()
   delay(READ_DELAY);
 }
 
-long microsecondsToCentimeters(long microseconds)
+float microsecondsToCentimeters(long microseconds)
 {
   //The speed of sound is 340 m/s or 29 microseconds per centimeter
   //The ping travels twice the distance, there and back and so divide by 58
-  return microseconds / 58;
+  return microseconds / 58.0;
 }

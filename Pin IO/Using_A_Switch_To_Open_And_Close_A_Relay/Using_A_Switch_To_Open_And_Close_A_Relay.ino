@@ -1,6 +1,6 @@
-#define RELAY_PIN 5 //Use digital pin 5 for the relay
-#define SWITCH_PIN 7 //Use digital pin 7 for the switch
-int switchState = 0;
+#define RELAY_PIN 4 //Use digital pin 4 for the relay
+#define SWITCH_PIN 6 //Use digital pin 6 for the switch
+int switchState = LOW;
  
 void setup()
 {

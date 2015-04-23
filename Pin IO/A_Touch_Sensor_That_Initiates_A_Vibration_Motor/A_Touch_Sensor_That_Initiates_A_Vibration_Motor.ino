@@ -1,5 +1,5 @@
-#define MOTOR_PIN 5 //Use digital pin 5 for the vibration motor
-#define TOUCH_PIN 7  //Use digital pin 7 for the touch sensor
+#define MOTOR_PIN 4 //Use digital pin 4 for the vibration motor
+#define TOUCH_PIN 6 //Use digital pin 6 for the touch sensor
 
 void setup() 
 {

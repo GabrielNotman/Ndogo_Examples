@@ -1,6 +1,5 @@
 //Include the necessary libraries
 #include <Wire.h>
-#include <Sodaq_DS3231.h>
 #include <SeeedGrayOLED.h>
 
 //These constants are used for reading the battery voltage

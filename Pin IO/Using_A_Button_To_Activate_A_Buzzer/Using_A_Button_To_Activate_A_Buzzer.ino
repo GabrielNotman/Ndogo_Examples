@@ -1,6 +1,6 @@
-#define BUZZER_PIN 5 //Use digital pin 4 for the buzzer
-#define BUTTON_PIN 7 //Use digital pin 20 for the button
-int buttonState = 0; 
+#define BUZZER_PIN 4 //Use digital pin 4 for the buzzer
+#define BUTTON_PIN 6 //Use digital pin 6 for the button
+int buttonState = LOW; 
 
 void setup()
 {

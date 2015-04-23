@@ -1,6 +1,5 @@
-#define LED_PIN 5 //Use digital pin 5 for the LED
-#define MAGNETIC_SWITCH 7 //Use digital pin 7 for the magnetic switch
-
+#define LED_PIN 4 //Use digital pin 5 for the LED
+#define MAGNETIC_SWITCH 6 //Use digital pin 7 for the magnetic switch
  
 void setup()
 {
